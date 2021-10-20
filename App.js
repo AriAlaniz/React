@@ -48,3 +48,37 @@ const Counter = () => {
       </>
     );
   }
+
+const productos = [
+  { 
+    id: "mate", price: "400", name:"mate"
+  },
+  {
+    id:"autocebante", price:"800", name:"autocebante"
+  },
+];
+
+const task = new Promise ((resolve,
+  reject) => {
+    setTimeout(()=> { 
+      resolve (productos);
+      }, 3000);
+  });
+
+  task
+  .then(
+    (result) => {
+      
+    }
+  )
+export default function App (){
+  const [data, setData] = useState([]);
+  
+  const getData = (data) => 
+  new Promise((resolve, reject) =>[
+    if (data) {
+    resolve (data);
+  }else {
+    reject("No se encontro nada")
+  }
+});
