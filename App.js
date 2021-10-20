@@ -1,14 +1,17 @@
-import logo from './logo.svg';
+import 'imag/logo.jpeg'
 import './App.css';
+import { useState } from 'react'
+import 'src/index.css'
+import 'imag/autocebante.jpeg'
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+        <img src={logo.jpeg} className="App-logo" alt="logo" />
+        <h1>
+          Tienda de regalos
+        </h1>
         <a
           className="App-link"
           href="https://reactjs.org"
